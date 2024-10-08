@@ -75,7 +75,7 @@ void show()
     else
     {
         printf("\nElements present in the stack: \n");
-        for (int  i = top;  i >= 0;  - - i)
+        for (int  i = 0 ;  i <= top;i++)
             printf("%d\n", array[i]);
     }
 }
