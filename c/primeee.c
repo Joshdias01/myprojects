@@ -1,19 +1,27 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include<math.h>
 int main()
 {
-    int a,b,i,j,count;
-    printf("enter a & b");
-    scanf("%d%d",&a,&b);
-    for (i=a;i<=b;i++)
+    int n,i;
+    printf("enter the no ");
+    scanf("%d",&n);
+    if(n==0 || n==1)
     {
-        count==0;
-        for (j=1;j<=i;j++)
-        {
-            if(i%j==0)
-            count++;
-        }
-        if(count==2)
-        printf("%d",j);
+        printf("Entered no is not a prime no");
     }
+    else {
+        for (i=2;i<=n/2;i++)
+        {
+            if(n%i==0)
+            {
+                printf("entered no is not a prime no");
+                break;
+            }
+            else{
+                printf("entered no is prime ");
+            }
+    }
+    }
+    return 0;
 }
